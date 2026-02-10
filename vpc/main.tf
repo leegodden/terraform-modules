@@ -1,4 +1,4 @@
-# create vpc
+# create the vpc
 resource "aws_vpc" "vpc" {
   cidr_block           = 	var.vpc_cidr
   instance_tenancy     = 	"default"
@@ -6,17 +6,6 @@ resource "aws_vpc" "vpc" {
 
   tags = {
     Name = "${var.project_name}-${var.environment}-vpc"
-  }
-}
-
-# create vpc
-resource "aws_vpc" "vpc" {
-  cidr_block              = var.vpc_cidr
-  instance_tenancy        = "default"
-  enable_dns_hostnames    = true
-
-  tags      = {
-    Name    = "${var.project_name}-${var.environment}-vpc"
   }
 }
 
