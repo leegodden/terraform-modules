@@ -27,7 +27,7 @@ output "internet_gateway" {
 output "public_subnet_az1_id" {
   value = aws_subnet.public_subnet_az1.id
 }
-
+   
 # export the public subnet az2 id
 output "public_subnet_az2_id" {
   value = aws_subnet.public_subnet_az2.id
