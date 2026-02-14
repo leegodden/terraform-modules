@@ -27,6 +27,8 @@ variable "vpc_cidr" {
 
 }
 
+
+
 variable "public_subnet_az1_cidr" {
   description = "public subnet az1 cidr block"
   type        = string
